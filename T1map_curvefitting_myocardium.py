@@ -127,7 +127,7 @@ def filetoconc(path):
     return A,alpha,B,beta,resi,parameter, files
 
 def imagesave(path,A,alpha,B,beta,resi):
-    print('save　results　in folder:'+path)
+    print('save results in folder:'+path)
     np.savetxt(path+'A_Brix2.csv', A, delimiter=",")
     np.savetxt(path+'alpha_Brix2.csv', alpha, delimiter=",")
     np.savetxt(path+'B_Brix2.csv', B, delimiter=",")
@@ -246,7 +246,7 @@ for path in paths:
                         time = match.group(1)
 
                     else:
-                        print("no time1")
+                        print("no time 1")
 
 
                 if 'time 2' in line:
