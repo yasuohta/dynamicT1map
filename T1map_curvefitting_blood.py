@@ -124,7 +124,7 @@ def filetoconc(path):
     return A,alpha,B,beta,resi,parameter, files
 
 def imagesave(path,A,alpha,B,beta,resi):
-    print('save　results　in folder:'+path)
+    print('save results in folder:'+path)
     np.savetxt(path+'LV_A.csv', A, delimiter=",")
     np.savetxt(path+'LV_alpha.csv', alpha, delimiter=",")
     np.savetxt(path+'LV_B.csv', B, delimiter=",")
@@ -249,7 +249,7 @@ for path in paths:
                         print("no time 1")
 
 
-                if 'dynamic' in line:
+                if 'time 2' in line:
                     match = re.search(r'(\d{6})', line)
                     if match:
                         
